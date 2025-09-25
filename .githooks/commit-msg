@@ -1,0 +1,13 @@
+#!/bin/sh
+# filepath: f:\Projetos\task-tracker-cli\.git\hooks\commit-msg
+
+commit_msg_file="$1"
+commit_msg=$(head -n1 "$commit_msg_file")
+
+conventional_regex="^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert):"
+
+if ! echo "$commit_msg" | grep -Eq "$conventional_regex"; then
+    echo "Error: Commit message does not follow Conventional Commits format."
+    echo "Example: feat(login): add login button"
+    exit 1
+fi
