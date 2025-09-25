@@ -1,0 +1,29 @@
+{
+    "name": "task-tracker-cli",
+    "version": "0.0.1",
+    "description": "CLI app to track tasks and manage it",
+    "keywords": [
+        "CLI",
+        "APP",
+        "Javscript",
+        "Node"
+    ],
+    "homepage": "https://github.com/cauesooouza/task-tracker-cli#readme",
+    "bugs": {
+        "url": "https://github.com/cauesooouza/task-tracker-cli/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cauesooouza/task-tracker-cli.git"
+    },
+    "license": "ISC",
+    "author": "Cauê Souza",
+    "type": "commonjs",
+    "main": "index.js",
+    "engines": {
+        "node": ">=22"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
